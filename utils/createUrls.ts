@@ -9,11 +9,9 @@ export function createUrls(categories: Category[]): Urls {
         urls[category.slug] = ''
       }
 
-      if (prefix) {
-        urls[category.slug] += `${prefix}`
-      } else {
-        urls[category.slug] = '/catalog'
-      }
+      urls[category.slug] = !prefix
+        ? '/catalog'
+        : prefix
 
       urls[category.slug] += `/${category.slug}`
 
