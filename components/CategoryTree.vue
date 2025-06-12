@@ -24,7 +24,6 @@ const urls = inject<Urls>(URLS_INJECTION_KEY)
       <CategoryTree
         v-if="category.items?.length > 0"
         :categories="category.items"
-        :urls="urls"
       />
     </li>
   </ul>
