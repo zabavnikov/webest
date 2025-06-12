@@ -6,7 +6,7 @@ export function useFilter() {
   const appliedFilters = reactive<Set<string>>(new Set())
   const pattern = /\/filter\/(.*)\/apply$/
 
-  watch(router.currentRoute, async (value) => {
+  watch(router.currentRoute, (value) => {
     if (getFiltersFromUrl(value.path).length === 0) {
       appliedFilters.clear()
     }
