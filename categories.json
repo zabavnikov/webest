@@ -1,0 +1,25 @@
+[
+  {
+    "slug": "category",
+    "items": [
+      {
+        "slug": "subcategory_1",
+        "items": [
+          {
+            "slug": "subcategory_2",
+            "items": [
+              {
+                "slug": "subcategory_3",
+                "items": [
+                  {
+                    "slug": "subcategory_4"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+export const URLS_INJECTION_KEY = Symbol()
